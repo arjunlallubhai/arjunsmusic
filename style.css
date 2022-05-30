@@ -1,0 +1,199 @@
+body{
+  text-align: center;
+  background-color: darkgoldenrod;       
+}
+
+/*Codes for the headings*/
+h1{
+font-size:50px;
+text-align: center;
+}
+
+h2{
+  font-size: 40px;
+ text-align: center;
+ margin: 5px 400px 0px 400px;
+}
+
+h3{
+ text-align: center;
+ margin: 0px 400px 0px 400px;
+}
+
+/*Code for logo to be in top left and size it*/
+.logo-img{
+    padding:0px;
+    border:0px;
+    width:90px;
+    height:90px;
+}
+p {
+ font-size: 30px;
+ margin:20px 500px 20px 500px;
+-moz-text-size-adjust:none;
+-webkit-text-size-adjust: none;
+-ms-text-size-adjust: none; 
+}
+
+/*Setting width for the page*/
+html{
+    width:100%     
+}
+
+.floatRight{
+    float:right;
+}
+
+/*Add effects to the album images when hovered over*/
+.album:hover{
+    width:500;
+    height:500;
+    padding: inherit;
+  box-shadow: 10px 10px 10px 10px red;
+}
+
+a{
+  color:blue;
+  text-decoration:none; 
+    font-size: 25px;
+}
+
+/*Make the links change color when mouse is hovering over it*/
+a:hover {
+  color:yellow;
+    text-decoration: underline; 
+}
+
+footer{
+    background-color:saddlebrown;
+    text-align: center;
+    padding: 5px;
+    position:inherit;
+    font-size:10px;
+}
+
+.footer-text{
+    font-size:20px;
+}
+
+.footer-links{
+    font-size: 15px;
+    
+}
+caption {
+  display: table-caption;
+  text-align: center;
+}
+
+/*Make the logo be on the top left corner*/
+.logo-img{
+    float:left;
+}
+
+/*Basic properties of the navbar*/
+.navbar{
+width: 100%;
+position: fixed;        
+padding: 5px 0;
+color: #fff;
+ box-shadow: 0px -20px 0px 20px saddlebrown; 
+    }
+/* Navbar container */
+.navbar {
+  overflow:hidden;
+  background-color: saddlebrown;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration:none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: right;
+  overflow:hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; 
+  margin: 0; 
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position:fixed;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display:block;
+}
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 20px;
+  text-align:center;
+  cursor:pointer;
+  color: #fff;
+  background-color: #20A6BA;
+  border: none;
+  border-radius: 15px;
+ text-decoration: none;
+position: absolute;
+  right: 0px;
+  width: 300px;
+margin-right: 100px;
+    margin-top: 20px
+}
+
+.button:hover {
+    background-color:#75E6DA;
+}
+
+
