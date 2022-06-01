@@ -1,18 +1,26 @@
 body{
   text-align: center;
-  background-color: darkgoldenrod;       
+  background-color: darkgoldenrod;   
 }
 
 /*Codes for the headings*/
 h1{
 font-size:50px;
 text-align: center;
+        height:auto;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
 }
 
 h2{
   font-size: 40px;
  text-align: center;
  margin: 5px 400px 0px 400px;
+    height:auto;
+    width:60%;
+    margin-left:20%;
+    margin-right:20%;
 }
 
 h3{
@@ -29,15 +37,18 @@ h3{
 }
 p {
  font-size: 30px;
- margin:20px 500px 20px 500px;
--moz-text-size-adjust:none;
--webkit-text-size-adjust: none;
--ms-text-size-adjust: none; 
+-moz-text-size-adjust:100%;
+-webkit-text-size-adjust: 100%;
+-ms-text-size-adjust:100%; 
+    height:auto;
+    width:50%;
+    margin-left:25%;
+    margin-right:25%;
 }
 
 /*Setting width for the page*/
 html{
-    width:100%     
+    width:100%  
 }
 
 .floatRight{
@@ -46,8 +57,8 @@ html{
 
 /*Add effects to the album images when hovered over*/
 .album:hover{
-    width:500;
-    height:500;
+    width:500px;
+    height:500px;
     padding: inherit;
   box-shadow: 10px 10px 10px 10px red;
 }
@@ -194,6 +205,10 @@ margin-right: 100px;
 
 .button:hover {
     background-color:#75E6DA;
+}
+/* Use Media Query to add a breakpoint at 800px: */
+@media screen and (max-width:400px) {
+  .left , .main, .right {width:100%;}
 }
 
 
