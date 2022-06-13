@@ -3,7 +3,44 @@ body{
   background-color: darkgoldenrod;   
 }
 
-/*Codes for the headings*/
+/*Adjusts the size of images and text when the screen width is smaller than 768px*/
+@media only screen and (max-width: 768px) {
+    a{
+        font-size-adjust:none;
+        font-size:50px;
+    }
+    
+    p{
+        font-size: 100%;
+       -moz-text-size-adjust:100%;
+       -webkit-text-size-adjust: 100%;
+       -ms-text-size-adjust:100%; 
+        padding:none;
+        margin: none;
+    }
+    
+    .album{
+        width:50%;
+        height:auto;
+    }
+/*Make the album cover expand and have a red border when mouse is hovered*/
+    .album:hover{
+    width:110%;
+    height:10%;
+  box-shadow: 10px 10px 10px 10px red;
+}
+/*Makes the footer disappear if the screen is small*/
+    footer{
+        color:saddlebrown;
+    }
+    
+    .button{
+        width:20px;
+        font-size: 300px;
+    }
+}
+
+/*Puts main header in the middle of the page*/
 h1{
 font-size:50px;
 text-align: center;
@@ -13,10 +50,10 @@ text-align: center;
     margin-right:20%;
 }
 
+
 h2{
   font-size: 40px;
  text-align: center;
- margin: 5px 400px 0px 400px;
     height:auto;
     width:60%;
     margin-left:20%;
@@ -35,18 +72,18 @@ h3{
     width:90px;
     height:90px;
 }
+/*Adjusts text sizes when on different browsers*/
 p {
- font-size: 30px;
--moz-text-size-adjust:100%;
--webkit-text-size-adjust: 100%;
--ms-text-size-adjust:100%; 
+-moz-text-size-adjust:200%;
+-webkit-text-size-adjust: 200%;
+-ms-text-size-adjust:200%; 
     height:auto;
     width:50%;
     margin-left:25%;
     margin-right:25%;
     margin-bottom: 1%;
     margin-top:1%;
-    font-size-adjust: 200%;
+    font-size: 200%;
 }
 
 /*Setting width for the page*/
@@ -54,6 +91,10 @@ html{
     width:100%  
 }
 
+/*Making the max-width of all images 50*/
+img{
+    max-width: 100%;
+}
 .floatRight{
     float:right;
 }
@@ -84,7 +125,6 @@ footer{
     padding: 5px;
     position:inherit;
     font-size:10px;
-  width: 100%;
 }
 
 .footer-text{
@@ -95,12 +135,13 @@ footer{
     font-size: 15px;
     
 }
+
 caption {
   display: table-caption;
   text-align: center;
 }
 
-/*Make the logo be on the top left corner*/
+/*Make the logo be on the top left corner of the page*/
 .logo-img{
     float:left;
 }
@@ -183,13 +224,13 @@ color: #fff;
   display:block;
 }
 
-/* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%
 }
 
+/*Codes for the button*/
 .button {
   padding: 15px 25px;
   font-size: 20px;
@@ -207,10 +248,11 @@ margin-right: 100px;
     margin-top: 20px
 }
 
+/*Changes colour of the button when hovered*/
 .button:hover {
     background-color:#75E6DA;
 }
-/* Use Media Query to add a breakpoint at 800px: */
+/* Make the breakpoint at 800px: */
 @media screen and (max-width:400px) {
   .left , .main, .right {width:100%;}
 }
