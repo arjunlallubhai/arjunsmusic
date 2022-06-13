@@ -19,10 +19,18 @@ body{
         margin: none;
     }
     
+    img{
+        min-width: 80px;
+    }
+    .logo-img{
+        width:15%;
+       height:15%;
+    }
     .album{
         width:50%;
         height:auto;
     }
+}
 /*Make the album cover expand and have a red border when mouse is hovered*/
     .album:hover{
     width:110%;
