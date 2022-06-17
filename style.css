@@ -50,7 +50,7 @@ body{
 
 /*Puts main header in the middle of the page*/
 h1{
-font-size:50px;
+font-size:60px;
 text-align: center;
         height:auto;
     width:60%;
@@ -264,5 +264,3 @@ margin-right: 100px;
 @media screen and (max-width:400px) {
   .left , .main, .right {width:100%;}
 }
-
-
